@@ -21,7 +21,7 @@ public class CarDoa {
 		boolean f=false;
 		try
 		{
-			//jdbccode 
+		
 
 			Connection con = Connectionjdbc.createC();
 			String q="Insert into carlist(carId,carCompany, carName, carOwner, ownerinfo, licenceNo) values(?,?,?,?,?,?)";
@@ -141,7 +141,7 @@ public class CarDoa {
 		boolean f=false;
 		try
 		{
-			//jdbccode 
+	
 
 			Connection con = Connectionjdbc.createC();
 			String q="update carlist set carId=?, carCompany=?,carName=? ,carOwner=?, ownerinfo=?, licenceNo=? where carId=?";
