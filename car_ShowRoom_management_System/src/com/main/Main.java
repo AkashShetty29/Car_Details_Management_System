@@ -32,7 +32,7 @@ public class Main {
 			
 			switch (choice) 
 			{
-				case 1: //add student
+				case 1: //add car details
 					System.out.println("enter car id :");				
 					int id = Integer.parseInt(br.readLine());
 				
@@ -53,7 +53,7 @@ public class Main {
 					String licence= br.readLine(); 
 				
 					
-				//create student object to store the data 
+				//create st object to store the data 
 					Entity st = new Entity(id,company, name,owner,ownerInfo,licence);
 				
 				
@@ -71,7 +71,7 @@ public class Main {
 				
 					break;
 			
-				case 2: // delete student
+				case 2: // delete Car details
 				
 					System.out.println("Enter the car id you wanted to delete");
 					int carId = Integer.parseInt(br.readLine());
@@ -90,13 +90,13 @@ public class Main {
 				
 					break;
 			
-				case 3: // display students 
+				case 3: // display All Cars 
 				
 					CarDoa.displayAllCar();
 				
 					break;
 				
-				case 4: // update student
+				case 4: // update Car deails through ID
 					System.out.println("enter Car id which data you want to update");
 					int carId2 = Integer.parseInt(br.readLine());
 //				
@@ -118,7 +118,7 @@ public class Main {
 					System.out.println("Enter car Licence number:");
 					String licence2= br.readLine(); 
 				
-					//create student object to store the data 
+					//create st2 object to store the data 
 					Entity st2 = new Entity(id2,company2, name2,owner2,ownerInfo2,licence2);
 				
 					boolean yes2 =CarDoa.updateCar(st2,carId2);
